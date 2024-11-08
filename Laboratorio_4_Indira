@@ -10,3 +10,13 @@ CREATE TABLE Autores (
     Fecha_Nacimiento DATE,
     PRIMARY KEY (ID_Autor)
 );
+
+USE Biblioteca;
+
+CREATE TABLE Categoria (
+    ID_Categoria INT AUTO_INCREMENT,
+    Nombre VARCHAR(100) NOT NULL,
+    Categoria VARCHAR(50),
+    PRIMARY KEY (ID_Categoria)
+);
+
