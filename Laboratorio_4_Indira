@@ -1,2 +1,12 @@
 CREATE DATABASE Biblioteca;
 USE Biblioteca;
+
+USE Biblioteca;
+
+CREATE TABLE Autores (
+    ID_Autor INT AUTO_INCREMENT,
+    Nombre VARCHAR(100) NOT NULL,
+    Nacionalidad VARCHAR(50),
+    Fecha_Nacimiento DATE,
+    PRIMARY KEY (ID_Autor)
+);
