@@ -24,9 +24,9 @@ Use biblioteca;
 CREATE TABLE libros(
     ID_Libro INT PRIMARY KEY AUTO_INCREMENT,
     TITULO VARCHAR(100) NOT NULL,
-    ID_AUTOR INT,
-    ID_CATEGORIA INT,
-    AÑO_PUBLICACION INT,
+    ID_Autor INT,
+    ID_Categoria INT,
+    Año_Publicacion INT,
     DISPONIBLE BOOLEAN DEFAULT TRUE,
     FOREIGN KEY (ID_AUTOR) REFERENCES autores(ID_AUTOR),
     FOREIGN KEY (ID_Categoria) REFERENCES categoria(ID_Categoria)
@@ -49,4 +49,13 @@ CREATE TABLE Prestamos(
     Fecha_Devolucion DATE,
     FOREIGN KEY (ID_Usuario) REFERENCES Usuarios(ID_Usuario),
     FOREIGN KEY (ID_Libro) REFERENCES libros(ID_Libro)
+);
+
+
+USE biblioteca
+INSERT INTO autores (Nombre, Nacionalidad, Fecha_Nacimiento) 
+VALUES
+    ('Gabriel García Márquez', 'Colombiano', '1927-03-06'),
+    ('J.K. Rowling', 'Británica', '1965-07-31'),
+    ('George Orwell', 'Británica', '1903-06-25');
 );
