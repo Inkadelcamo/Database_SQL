@@ -1,2 +1,19 @@
 Create DATABASE Empresa
 
+USE empresa;
+CREATE TABLE Empleados (
+    ID_Empleado INT AUTO_INCREMENT,
+    Nombre VARCHAR(100) NOT NULL,
+    Cargo VARCHAR(50),
+    Salario varchar(20),
+    PRIMARY KEY (ID_Empleado)
+);
+
+USE empresa;
+CREATE TABLE Cargo (
+    ID_Cargo INT AUTO_INCREMENT,
+    Nombre_Cargo VARCHAR(100) NOT NULL,
+    Descripcion varchar(100), 
+    Salario Varchar(20),
+    PRIMARY KEY (ID_Cargo)
+);
