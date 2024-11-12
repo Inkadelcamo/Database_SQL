@@ -77,3 +77,10 @@ INSERT INTO Usuarios (Nombre, Direccion, Telefono)
 VALUES
     ('Carlos Martínez', 'Calle Luna, 123', '123456789'),
     ('Lucía Fernández', 'Avenida Sol, 456', '987654321');
+
+
+INSERT INTO Prestamos (ID_Usuario, ID_Libro, Fecha_Prestamo, Fecha_Devolucion)
+VALUES
+    (1, 1, '2024-08-01', '2024-08-15'),
+    (2, 2, '2024-08-02', '2024-08-16');
+
