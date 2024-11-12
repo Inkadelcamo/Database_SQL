@@ -66,3 +66,9 @@ VALUES
     ('Fantasía'),
     ('Ensayo');
 
+
+INSERT INTO libros (TITULO, ID_Autor, ID_Categoria, Año_Publicacion)
+VALUES
+    ('Cien Años de Soledad', 1, 1, 1967),
+    ('Harry Potter y la Piedra Filosofal', 2, 3, 1997),
+    ('La era de 1984', 3, 2, 1949);
