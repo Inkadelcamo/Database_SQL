@@ -24,3 +24,10 @@ VALUES
     ('Ana Gomez', 'Desarrollador', '6000000'),
     ('Luis Castro', 'Proyectos', '10000000');
 
+INSERT INTO  cargo (Nombre_cargo, salario) 
+VALUES
+    ('Gerente', '500000'),
+    ('Asistente', '250000'),
+    ('Desarollador', '400000');
+
+
