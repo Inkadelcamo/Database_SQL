@@ -17,3 +17,10 @@ CREATE TABLE Cargo (
     Salario Varchar(20),
     PRIMARY KEY (ID_Cargo)
 );
+
+INSERT INTO empleados (Nombre, Cargo, Salario) 
+VALUES
+    ('Juan Perez', 'Gerente', '7500000'),
+    ('Ana Gomez', 'Desarrollador', '6000000'),
+    ('Luis Castro', 'Proyectos', '10000000');
+
