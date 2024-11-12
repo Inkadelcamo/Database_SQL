@@ -44,3 +44,9 @@ Actualizar el salario de un empleado
 USE empresa;
 UPDATE empleados
 SET salario=6500000 WHERE nombre= 'Ana Gomez';
+
+Eliminar empleado
+
+USE empresa;
+DELETE FROM empleados WHERE nombre = 'LUIS CASTRO';
+
