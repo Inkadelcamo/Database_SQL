@@ -50,3 +50,14 @@ Eliminar empleado
 USE empresa;
 DELETE FROM empleados WHERE nombre = 'LUIS CASTRO';
 
+
+Seleccionar empleados con cargo Desarrollador
+USE empresa; SELECT*FROM empleados WHERE cargo='Desarrollador';	
+
+Insertar un nuevo empleado con un cargo existente
+INSERT INTO empleados (Nombre, Cargo, Salario)
+VALUES
+('Martha Lopez', 'Asistente', '3000000');
+
+
+
