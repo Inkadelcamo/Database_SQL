@@ -62,4 +62,43 @@ VALUES
 
 ---------------------------------PARTE 2---------------------------------------------
 
+Actualizar la disponibilidad
+USE biblioteca;
+UPDATE libros
+SET Disponible = FALSE
+WHERE ID_Libro =1;
+
+Actualizar la fecha de devolucion de un prestamo
+USE biblioteca;
+UPDATE prestamos
+SET Fecha_Devolucion = '2024-08-15'
+WHERE ID_Prestamos =1;	
+
+Eliminar un libro de la base de datos
+USE biblioteca;
+DELETE FROM Libros
+WHERE TITULO = 'La era de 1984';
+
+Seleccionar todos los libros:
+		SELECT*FROM libros;
+
+Seleccionar todos los autores
+SELECT*FROM autores;
+
+
+Seleccionar el libro de Gabriel García Márquez
+
+USE biblioteca;
+SELECT*FROM libros
+	WHERE ID_Autor=1;
+
+
+Mostrar los libros devueltos en el mes 8 de la tabla prestamos del año 2024, puedes filtrar por el mes en la columna Fecha_Devolucion.
+
+	USE biblioteca;
+	SELECT*FROM prestamos
+	WHERE MONTH (Fecha_Devolucion)= '8' AND YEAR(Fecha_Devolucion)=2024;
+
+
+
 
