@@ -30,4 +30,8 @@ VALUES
     ('Asistente', '250000'),
     ('Desarollador', '400000');
 
+Realizar consulta de empleados
+SELECT*FROM empleados;
+
+
 
